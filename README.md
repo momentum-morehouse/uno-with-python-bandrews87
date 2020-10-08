@@ -13,15 +13,15 @@
 
 Notes from class: 
 
-Number cards 0-9
-4 Colors 
+#### Number cards 0-9
+#### 4 Colors 
 - Red
 - Green
 - Yellow
 - Blue
 
-Version 2.0
-Action cards 
+#### Version 2.0
+#### Action cards 
 - Reverse
 - Draw 2
 - Draw 4
@@ -29,43 +29,42 @@ Action cards
 - Wild Draw 4
 - Skip
 
-Start 
+#### Start 
 - Dealer deals 7 cards to each player
 - Deck set aside
 - Pull one random card from the deck and put it face up
 
-Turns
+#### Turns
 - If player has card that matches color or number, place on top of deck.
 - If no matching card, draw one from the deck. If you can play that card, you do.
 - Turn moves on to next person. 
 
-Winner
+#### Winner
 - When one player runs out of cards.
 - You have to say "UNO" when you have one card left.
 
 Version 1.0
-Classes:
-Card
+#### Classes:
+#### Card
     - Number
     - Color
-    - Action (2.0)
 
-Deck
+#### Deck
     - Made up of cards
-        - No cards can be missing
+    - No cards can be missing
     - Able to be shuffled
     - Able to be drawn from
 
-Player
+#### Player
     - Name
     - Hand
-        - Contains cards
-        - Starting number of cards
+    - Contains cards
+    - Starting number of cards
     - Able to Draw from the deck
     - Able to throw out cards
     - Able to win or lose
 
-Game
+#### Game
     - Players
     - Rounds
-        - Each player takes a turn
+    - Each player takes a turn
