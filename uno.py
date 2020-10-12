@@ -1,5 +1,6 @@
+from random import randint
 NUMBERS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-COLORS = ["🔴","🟢","🟡","🔵" ]
+COLORS = ["🔴", "🟢", "🟡", "🔵"]
 
 
 class Card:
@@ -8,12 +9,13 @@ class Card:
         self.color = color
 
     def ___str___(self):
-        return f"{self.color} {self.number}"   
+        return f"{self.color} {self.number}"
 
 
 class Player:
+
     def __init__(self, name):
-        self.name = name 
+        self.name = name
 
 
 class Deck:
@@ -23,7 +25,15 @@ class Deck:
             for color in colors:
                 card = (color, number)
                 self.cards.append(card)
-        
+
+    def shuffle(self, cards):
+        deck_copy = self.cards
+        random_deck = []
+        while len(deck_copy) > 0:
+            random_card = deck_copy[randint(0, len(deck_copy) - 1)]
+            random_deck.append(random_card)
+            deck_copy.remove(random_card)
+        return random_deck
 
 
 class Game:
